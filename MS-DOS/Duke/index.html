@@ -1,0 +1,38 @@
+<!doctype html>
+ <html lang="en-us">
+   <head>
+     <meta charset="utf-8">
+     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+     <title>Duke Nukem 3D: Atomic Edition</title>
+     <style type="text/css">
+       .dosbox-container { width: 640px; height: 400px; }
+       .dosbox-container > .dosbox-overlay { background: url(https://js-dos.com/cdn/Duke Nukem 3d.png); }
+     </style>
+   </head>
+   <body>
+     <center><div id="dosbox"></div></center>
+     <br/>
+     <center><button onclick="dosbox.requestFullScreen();">Make fullscreen</button></center>
+     
+     <script type="text/javascript" src="index.js"></script>
+     <script type="text/javascript">
+       var dosbox = new Dosbox({
+         id: "dosbox",
+         onload: function (dosbox) {
+            dosbox.run("https://magnusmarx.github.io/DUKE3D.zip", "./SETUP.EXE");
+         },
+         onrun: function (dosbox, app) {
+           console.log("App '" + app + "' is runned");
+         }
+       });
+     </script>
+	<P><B>I DID NOT CREATE THESE GAMES. ALL RIGHTS GO TO THE ORIGINAL CREATORS.</B></P>
+	<p><b><font color='red'>This game tends to get super laggy, so here is a fix.</font></b></p> 
+	<p><b><font color='red'>(1) The game will load into setup.exe.</font></b></p> 
+	<p><b><font color='red'>(2) Go to where it says Screen Setup, then select VESA modes (SVGA/VESA 2.0).</font></b></p> 
+	<p><b><font color='red'>(3) Then click 320 x 200. It will give you an error message, just ignore it and hit enter.</font></b></p>
+   </body>
+</html>
+ 
+ 
+ 
