@@ -1,1 +1,0 @@
-[CreateGroup(Broderbund Software,brodbund.grp)] [AddItem(C:\USAD\USAD.PIF,Where in the USA is Carmen Sandiego?,C:\USAD\USAD.ICO)]
